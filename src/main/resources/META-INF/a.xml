@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="childA" class="com.intellij.treeConfigs.model.Child">
+        <constructor-arg value="childA"/>
+    </bean>
+
+    <bean id="parentA" class="com.intellij.treeConfigs.model.Parent">
+        <constructor-arg ref="childB"/>
+    </bean>
+
+    <bean id="greatParentA" class="com.intellij.treeConfigs.model.GreatParent">
+        <constructor-arg name="subParent" ref="parentC1"/>
+    </bean>
+
+    <bean id="greatParentA2" class="com.intellij.treeConfigs.model.GreatParent">
+        <constructor-arg name="subParent" ref="greatParentB1"/>
+    </bean>
+
+    <bean id="greatParentA3" class="com.intellij.treeConfigs.model.GreatParent">
+        <constructor-arg name="subParent" ref="parentE1"/>
+    </bean>
+
+    <import resource="d2.xml"/>
+
+</beans>

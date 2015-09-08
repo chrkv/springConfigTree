@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="childF" class="com.intellij.treeConfigs.model.Child">
+        <constructor-arg value="childF"/>
+    </bean>
+
+    <bean id="parentF" class="com.intellij.treeConfigs.model.Parent">
+        <constructor-arg ref="childG"/>
+    </bean>
+
+    <!--<bean id="parentF_wrong" class="com.intellij.treeConfigs.model.Parent">-->
+        <!--<constructor-arg ref="childG_nonExistent"/>-->
+    <!--</bean>-->
+
+</beans>
