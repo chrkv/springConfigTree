@@ -8,7 +8,7 @@
     </bean>
 
     <bean id="parentFq1" class="com.intellij.treeConfigs.model.Parent">
-        <constructor-arg ref="childG"/>
+        <constructor-arg ref="childA"/>
     </bean>
 
     <!--<bean id="parentF_wrong" class="com.intellij.treeConfigs.model.Parent">-->

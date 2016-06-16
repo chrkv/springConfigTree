@@ -24,6 +24,7 @@
     </bean>
 
     <import resource="f.xml"/>
-    <import resource="*2.xml"/>
+    <import resource="d.xml"/>
+    <import resource="*3.xml"/>
 
 </beans>

@@ -13,7 +13,7 @@ public class TreeConfigs {
         ConfigurableApplicationContext context =
       				new ClassPathXmlApplicationContext("META-INF/main.xml"
 //                    );
-                            ,"META-INF/d2.xml");
+                            ,"META-INF/a.xml", "META-INF/b.xml");
 
         Child childA = context.getBean("childA", Child.class);
         Child childB = context.getBean("childB", Child.class);

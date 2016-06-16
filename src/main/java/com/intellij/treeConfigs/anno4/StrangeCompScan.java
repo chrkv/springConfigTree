@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackageClasses = {anno5.NonExistent})
+//@ComponentScan(basePackageClasses = {anno5.NonExistent})
 public class StrangeCompScan {
 
 }
