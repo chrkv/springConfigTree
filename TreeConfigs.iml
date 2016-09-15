@@ -4,11 +4,15 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="MyApp" removed="false" />
+        <fileset id="fileset3" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/intellij/treeConfigs/anno/ConfigE.java</file>
+        </fileset>
         <fileset id="fileset2" name="some long fileset name" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/main.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/my.properties</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/a.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/b.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/intellij/treeConfigs/anno/ConfigE.java</file>
         </fileset>
       </configuration>
     </facet>
@@ -33,6 +37,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:1.7.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.9.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.12" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.12" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:4.0.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.0.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.0.9.RELEASE" level="project" />
